@@ -28,7 +28,8 @@ vim
 virt-viewer
 xfsprogs
 
-# Pochota Web - extra tools
+# Pochota Web - web-first tools
+brave-bin
 git
 nodejs
 npm
