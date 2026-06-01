@@ -21,9 +21,16 @@ jobs:
           pacman-key --populate archlinux
           pacman -Syu --noconfirm archiso grub syslinux
 
+      - name: Debug workspace
+        run: |
+          echo "Workspace: ${{ github.workspace }}"
+          ls -la "${{ github.workspace }}/pochota" || true
+          ls -la . || true
+          pwd
+
       - name: Build ISO
         run: |
-          mkarchiso -v -w /work -o /out "${{ github.workspace }}/pochota"
+          mkarchiso -v -w /work -o /out ./pochota
 
       - name: Upload ISO
         uses: actions/upload-artifact@v4
