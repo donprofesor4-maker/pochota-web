@@ -10,8 +10,7 @@ dosfstools
 e2fsprogs
 efibootmgr
 grub
-ipw2100-fw
-ipw2200-fw
+
 iwd
 libvirt
 mkinitcpio
@@ -29,7 +28,7 @@ virt-viewer
 xfsprogs
 
 # Pochota Web - web-first tools
-brave-browser
+brave-bin
 git
 nodejs
 npm
